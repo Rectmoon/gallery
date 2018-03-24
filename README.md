@@ -3,7 +3,8 @@
 
 ## 项目运行
 安装工具
-npm i -g yo
+```
+npm i -g yo &&
 npm i -g generator-react-webpack
 ```
 clone项目源码
@@ -12,7 +13,7 @@ git clone https://github.com/Rectmoon/gallery.git
 ```
 安装依赖
 ```
-cd gallery
+cd gallery &&
 npm install
 ```
 运行
@@ -29,6 +30,6 @@ node 6+ npm 4+
 - webpack：构建工具
 - es6: 使用es6语法
 - stylus: css预处理
-- react
+- react+jsx
 
 
