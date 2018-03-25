@@ -1,15 +1,15 @@
-import 'styles/app.styl';
+import 'lib/stylesheets/app.styl';
 import React from 'react';
 import ReactDOM from 'react-dom'
 import ImageFigure from 'components/ImageFigure';
 import Controller from 'components/Controller';
-import { getRangeRandom,get30DegRandom } from '../lib/utils';
+import { getRangeRandom,get30DegRandom } from 'lib/js/utils';
 
-var images = require('../data/images.json');
+var images = require('lib/data/images.json');
 images = (function getImageUrl(arr) {
 	for(var i=0;i<arr.length;i++) {
 		var singleImageData = arr[i];
-		singleImageData.imageUrl = require('../images/'+singleImageData.fileName);
+		singleImageData.imageUrl = require('lib/images/'+singleImageData.fileName);
 		arr[i] = singleImageData;
 	}
 	return arr
@@ -174,7 +174,6 @@ class Gallery extends React.Component {
 						controllers
 					}
    			</nav>
-				{/* <audio src='../source/1.mp3' autoPlay></audio> */}
      	</section>
     );
 	}

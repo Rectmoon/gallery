@@ -1,5 +1,5 @@
 import React from 'react';
-import { handleClick } from '../lib/utils';
+import { handleClick } from 'lib/js/utils';
 
 class ImageFigure extends React.Component {
 	constructor(props) {

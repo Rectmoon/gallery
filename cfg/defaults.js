@@ -26,23 +26,23 @@ function getDefaultModules() {
     loaders: [
       {
         test: /\.css$/,
-        loader: 'style-loader!css-loader!autoprefixer-loader?{browsers:["last 2 version"]}'
+        loader: 'style-loader!css-loader!postcss-loader',
+        options: { sourceMap:'inline' }
       },
       {
-        test: /\.sass/,
-        loader: 'style-loader!css-loader!autoprefixer-loader?{browsers:["last 2 version"]}!sass-loader?outputStyle=expanded&indentedSyntax'
+        test: /\.sass$/,
+        loader: 'style-loader!css-loader!sass-loader?outputStyle=expanded&indentedSyntax',
+        options: { sourceMap:true }
       },
       {
-        test: /\.scss/,
-        loader: 'style-loader!css-loader!autoprefixer-loader?{browsers:["last 2 version"]}!sass-loader?outputStyle=expanded'
+        test: /\.scss$/,
+        loader: 'style-loader!css-loader!less-loader',
+        options: { sourceMap: true }
       },
       {
-        test: /\.less/,
-        loader: 'style-loader!css-loader!autoprefixer-loader?{browsers:["last 2 version"]}!less-loader'
-      },
-      {
-        test: /\.styl/,
-        loader: 'style-loader!css-loader!autoprefixer-loader?{browsers:["last 2 version"]}!stylus-loader'
+        test: /\.styl$/,
+        loader: 'style-loader!css-loader!postcss-loader!stylus-loader',
+        options: { sourceMap: true }
       },
       {
         test: /\.(png|jpg|gif|woff|woff2|eot|ttf|svg)$/,

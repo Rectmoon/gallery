@@ -2,10 +2,11 @@
 ![](https://i.imgur.com/g8IicMm.png)
 
 ## 项目运行
-安装工具
+快速构建工具
 ```
-npm i -g yo &&
+npm i -g yo 
 npm i -g generator-react-webpack
+yo react-webpack
 ```
 clone项目源码
 ```
@@ -13,7 +14,7 @@ git clone https://github.com/Rectmoon/gallery.git
 ```
 安装依赖
 ```
-cd gallery &&
+cd gallery 
 npm install
 ```
 运行

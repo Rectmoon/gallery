@@ -1,5 +1,5 @@
 import React from 'react';
-import { handleClick } from '../lib/utils';
+import { handleClick } from 'lib/js/utils';
 
 class Controller extends React.Component {
 	constructor(props) {

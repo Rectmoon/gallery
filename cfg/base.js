@@ -31,7 +31,7 @@ module.exports = {
     extensions: ['', '.js', '.jsx'],
     alias: {
       components: `${defaultSettings.srcPath}/components/`,
-      styles: `${defaultSettings.srcPath}/styles/`,
+      lib: `${defaultSettings.srcPath}/lib/`,
       config: `${defaultSettings.srcPath}/config/` + process.env.REACT_WEBPACK_ENV,
       'react/lib/ReactMount': 'react-dom/lib/ReactMount'
     }
